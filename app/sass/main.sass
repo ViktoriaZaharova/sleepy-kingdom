@@ -1,0 +1,1393 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: 300
+  background:
+  color: #fff
+  background: #000
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 2855px
+    z-index: -1
+    background: url("../img/bottom-bg.jpg") no-repeat center bottom
+      size: 100%
+
+
+html, body
+  overflow-x: hidden
+
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+
+.container
+  max-width: 1350px
+  width: 100%
+  padding: 0 15px
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+
+h1
+  text-transform: uppercase
+  font-size: 90px
+  font-family: $title-font
+  letter-spacing: 0.9px
+  text-align: center
+  width: 100%
+  display: block
+  margin: 0 auto
+  text-shadow: 0 0 60px rgba(#fff, .8)
+
+h2
+  width: 100%
+  font-size: 36px
+  text-transform: uppercase
+  display: block
+  text-align: center
+  font-family: $title-font
+  color: #fff
+
+.subtitle
+  font-size: 36px
+  text-align: center
+  text-transform: uppercase
+  font-family: $title-font
+  letter-spacing: 0.36px
+  text-shadow: 0 0 40px rgba(#fff, .5)
+
+.title-decor
+  &:first-letter
+    font-size: 72px
+    font-family: 'RosaMarena', sans-serif
+    line-height: 1
+
+.pos-r
+  position: relative
+
+.section-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.w-100
+  width: 100%
+
+.row
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 -15px
+
+.color-text
+  color: $text
+
+.color-green
+  color: $green
+
+.d-inline
+  display: inline-block
+
+.font-bold
+  font-weight: bold
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-border
+  border-radius: 20px
+  border: solid 2px #6781ad
+  height: 70px
+  width: 100%
+  max-width: 350px
+  font-size: 18px
+  color: #fff
+  text-transform: uppercase
+
+  &:hover
+    background: #6781ad
+
+.btn-decor
+  position: relative
+  background: url("../img/btn-green.png") no-repeat center
+    size: 100%
+  width: 423px
+  height: 171px
+  font-family: 'Luminari', sans-serif
+  color: #1e803c
+  font-size: 25px
+  text-shadow: 0px 4px 3px rgba(164, 48, 202, 0.3)
+  letter-spacing: 2.5px
+
+  span
+    position: relative
+    z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    left: 100px
+    width: 421px
+    height: 257px
+    background: url("../img/btn-green-overlay.png") no-repeat center
+      size: 100%
+
+//main
+main
+  padding: 0 0 103px
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 1279px
+    background: url("../img/bg1.png") no-repeat center
+      size: cover
+    z-index: -1
+
+  .container
+    flex-direction: column
+    align-items: center
+
+  p
+    text-align: center
+    font-size: 30px
+    letter-spacing: 0.3px
+
+.logo
+  margin: 24px auto 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    width: 932px
+    height: 628px
+    background: url("../img/logo-overlay.png") no-repeat center
+      size: 100%
+    left: 50%
+    transform: translate(-50%, 0)
+    top: -82px
+    z-index: -1
+    mix-blend-mode: screen
+
+//routes
+.routes
+  .container
+    max-width: 1400px
+    flex-direction: column
+    align-items: center
+
+  h2
+    font-size: 60px
+    letter-spacing: -0.3px
+    text-shadow: #fff 1px 1px 0
+    color: rgba(74, 114, 151, 0.35)
+
+.date
+  font-size: 36px
+  font-family: $title-font
+  text-align: center
+  letter-spacing: -0.18px
+  margin: 0 auto
+
+.video-box
+  margin: 33px auto 0
+  border-radius: 15px
+  max-width: 637px
+  width: 100%
+  height: 381px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  overflow: hidden
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    mix-blend-mode: soft-light
+    background-color: #ffffff
+
+.btn-play
+  display: flex
+  align-items: center
+  justify-content: center
+  border: solid 2px #ffffff
+    radius: 50%
+  position: relative
+  width: 131px
+  height: 131px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    mix-blend-mode: multiply
+    background-color: rgba(#355862, .2)
+    border-radius: 50%
+    z-index: -1
+
+//advantages
+.advantages
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    background: url("../img/bg2.png") no-repeat center top
+      size: 100%
+    width: 100%
+    height: 1290px
+    top: -200px
+  .container
+    flex-direction: column
+    align-items: center
+    z-index: 1
+    position: relative
+  .box-text
+    max-width: 980px
+    width: 100%
+    margin: 0 auto
+    font-size: 28px
+    text-align: center
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      top: -100px
+      background: url("../img/text-overlay.png") no-repeat center
+        size: 100%
+      width: 390px
+      height: 463px
+    h6
+      text-align: center
+      font-family: 'RosaMarena', sans-serif
+      font-size: 48px
+      color: #8aafce
+      margin: 0 auto 20px
+      letter-spacing: -0.36px
+    p
+      margin: 0 0 20px
+      letter-spacing: -0.14px
+      &:last-child
+        margin: 0
+  .section-wrapper
+    justify-content: flex-start
+  h5
+    text-align: center
+    width: 100%
+    font-size: 36px
+    font-family: $title-font
+    margin: 0 auto 30px
+    letter-spacing: -0.18px
+
+.advantages-box
+  color: #fff
+  position: relative
+  text-transform: uppercase
+  text-align: center
+  text-shadow: 0 0 59px #717171
+  font-family: $title-font
+  font-size: 30px
+  letter-spacing: -0.15px
+
+  h3
+    font-size: 150px
+    letter-spacing: -0.75px
+
+  &__img
+    position: absolute
+    width: 100%
+
+  &:first-child
+    margin: 0 309px 65px 40px
+
+    .advantages-box__img
+      min-width: 379px
+      top: -225px
+      left: -45px
+
+  &:nth-child(2)
+    margin: 0 320px 65px 0
+
+    .advantages-box__img
+      min-width: 358px
+      left: -177px
+      top: -155px
+
+  &:nth-child(3)
+    .advantages-box__img
+      min-width: 378px
+      top: -235px
+      left: -165px
+
+.title-box
+  text-align: center
+  text-transform: uppercase
+  font-family: $title-font
+  margin: 0 auto 40px
+  font-size: 28px
+  max-width: 680px
+  width: 100%
+
+
+
+//for-whom
+.for-whom
+  padding: 135px 0
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -120px
+    width: 100%
+    background: #02020a
+    min-height: 993px
+    z-index: -1
+
+  h2
+    margin: 0 auto 80px
+
+.for-whom-box
+  width: 20%
+  text-align: center
+  font-size: 28px
+  padding: 0 10px
+  margin: 0 auto 15px
+
+  &__icon
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+
+//what-learn
+.what-learn
+  position: relative
+  padding: 0 0 234px
+
+  .box-text
+    text-align: center
+    font-size: 33px
+    color: #cfd7f8
+    line-height: 1.82
+    text-shadow: 0 0 136.8px rgba(36, 36, 36, 0.65)
+    margin: 94px auto 0
+    position: relative
+
+    &:before, &:after
+      content: ''
+      position: absolute
+
+    &:before
+      left: -50px
+      bottom: 220px
+      background: url("../img/bat2.png") no-repeat center
+        size: 100%
+      width: 242px
+      height: 262px
+
+    &:after
+      width: 252px
+      height: 253px
+      right: -80px
+      bottom: 70px
+      background: url("../img/bat3.png") no-repeat center
+        size: 100%
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 200px
+    width: 100%
+    height: 2619px
+    background: url("../img/bg5.png") no-repeat center top
+      size: cover
+    z-index: -1
+
+  .container
+    flex-direction: column
+    align-items: center
+
+  h2
+    width: fit-content
+    margin: 0 auto
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      width: 253px
+      height: 252px
+      right: -152px
+      top: -153px
+      background: url("../img/bat1.png") no-repeat center
+        size: 100%
+
+
+.what-learn__img
+  margin: 49px auto 0
+
+
+//result-course
+.result-course
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/decor-sky1.png") no-repeat center
+      size: 100%
+    right: 0
+    bottom: -120px
+    width: 638px
+    height: 610px
+    z-index: 1
+
+  .section-wrapper
+    width: 100%
+    position: relative
+    margin: 98px auto 0
+    background: url("../img/figure1.png") left top no-repeat
+    align-items: stretch
+    &:after
+      content: ''
+      position: absolute
+      background: url("../img/decor-sky2.png") no-repeat center
+        size: 100%
+      width: 301px
+      height: 414px
+      left: -301px
+      bottom: 227px
+  //box-shadow: 0 0 180px rgba(#52456c, .5)
+  h2
+
+    span
+      margin: 0 0 0 80px
+
+.result-course-box
+  width: 25%
+  font-size: 33px
+  line-height: 1.09
+  position: relative
+  color: #fff
+  padding: 58px 35px
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 330px
+  overflow: hidden
+
+  &:last-child
+    background: rgba(#927a90, .85)
+    border-radius: 0 0 50px 0
+
+  &:nth-child(8)
+    background: rgba(#927a90, .85)
+
+  &:nth-child(2)
+    background: rgba(#7a5c77, .85)
+
+  &:nth-child(3)
+    background: rgba(#927a90, .85)
+    border-radius: 0 50px 0 0
+
+  &:nth-child(4)
+    background: rgba(#795b77, .85)
+    border-radius: 50px 0 0 0
+
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 622px
+      height: 605px
+      background: url("../img/figure2.png") no-repeat center
+        size: cover
+      opacity: .1
+
+  &:nth-child(6)
+    background: rgba(#876e84, .85)
+    border-radius: 0 0 50px 0
+
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 622px
+      height: 605px
+      background: url("../img/figure2.png") no-repeat center
+        size: cover
+      opacity: .1
+
+  &:nth-child(7)
+    overflow: visible
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      background: url("../img/figure3.png") no-repeat center
+        size: cover
+      width: 1069px
+      height: 1052px
+      z-index: -1
+
+  &:nth-child(9)
+    background: rgba(#5a4759, .85)
+    border-radius: 0 0 50px 0
+
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 622px
+      height: 605px
+      background: url("../img/figure2.png") no-repeat center
+        size: cover
+      opacity: .1
+
+  &:nth-child(10)
+    background: rgba(#927a90, .85)
+    border-radius: 0 50px 0 50px
+
+  &:nth-child(11)
+    background: rgba(#785a75, .85)
+    border-radius: 50px 0 0
+
+
+//sleeps
+.sleeps
+  position: relative
+  z-index: 1
+  padding: 124px 0 654px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 130px
+    width: 100%
+    height: 1561px
+    background: url("../img/bg4.png") no-repeat center
+      size: cover
+    z-index: -1
+
+  .box-text
+    max-width: 1141px
+    width: 100%
+    text-align: center
+    margin: 0 auto
+    font-size: 33px
+
+    p
+      margin: 0 0 30px
+
+  h2
+    margin: 0 auto 30px
+
+
+//about-course
+.about-course
+  position: relative
+  padding: 0 0 234px
+  z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 1414px
+    background: url("../img/bg3.png") no-repeat center bottom
+      size: cover
+    z-index: -1
+
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -160px
+    width: 724px
+    height: 931px
+    background: url("../img/decor6.png") no-repeat center
+      size: 100%
+
+  h2
+    max-width: 1070px
+    width: 100%
+    margin: 0 auto 40px
+
+  .box-text
+    font-size: 33px
+    margin: 0 auto 40px
+    max-width: 1070px
+    width: 100%
+    text-align: center
+
+    &:last-child
+      margin: 0
+
+.img-decor
+  position: absolute
+  width: 474px
+  height: 478px
+  right: 0
+  bottom: -120px
+
+.info-course
+  margin: 109px auto 0
+  max-width: 595px
+  width: 100%
+  text-align: center
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    width: 247px
+    height: 268px
+    right: -90px
+    top: 30%
+    background: url("../img/decor8.png") no-repeat center
+      size: 100%
+
+  h3
+    font-size: 36px
+    margin: 0 auto 60px
+    font-family: $title-font
+
+  .box-text
+    margin: 0 auto 50px
+
+    &:last-child
+      margin: 0 auto
+
+  strong
+    display: block
+    font-size: 36px
+    font-family: $title-font
+    text-transform: uppercase
+
+
+//program-composition
+.program-composition
+  padding: 46px 0 39px
+
+  .section-wrapper
+    justify-content: space-between
+    margin: 118px 0 0
+
+.program-composition-item
+  text-align: center
+  margin: 0 0 107px
+  width: 20%
+  font-size: 33px
+
+.program-composition__icon
+  margin: 0 auto 33px
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 199px
+
+
+//author
+.author
+  background: url("../img/author-bg.jpg") no-repeat center top
+    size: cover
+  padding: 27px 0 484px
+
+.name-author
+  margin: 0 auto
+  font-size: 156.5px
+  font-family: 'Colus', sans-serif
+  line-height: 1
+  color: rgba(#4a7297, .35)
+  text-align: center
+  text-shadow: #fff 1px 1px 0
+
+  &:first-letter
+    font-size: 274.5px
+    line-height: 1
+    font-family: 'RosaMarena', sans-serif
+
+.author-wrapper
+  max-width: 1165px
+  margin: 0 auto
+  width: 100%
+  position: relative
+
+.author-photo
+  max-width: 1165px
+  width: 100%
+  margin: 105px auto 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.author-photo-mob
+  display: none
+
+.author-text
+  position: absolute
+  font-size: 28px
+  line-height: 1.18
+  letter-spacing: 0.42px
+  padding: 0 70px 0 0
+
+  &:before
+    content: ''
+    position: absolute
+    width: 23px
+    height: 23px
+    border-radius: 50%
+    background: #fff
+    right: 0
+    top: 10px
+    box-shadow: 0 0 43px rgba(#fff, .95)
+
+.author-text1
+  max-width: 390px
+  top: 170px
+  left: -130px
+  text-align: right
+
+.author-text2
+  max-width: 390px
+  top: 330px
+  left: -165px
+  text-align: right
+
+.author-text3
+  max-width: 390px
+  top: 490px
+  left: -25px
+  text-align: right
+
+.author-text4
+  max-width: 255px
+  bottom: 210px
+  left: 110px
+  text-align: right
+
+.author-text5
+  max-width: 650px
+  bottom: 40px
+  left: 50%
+  transform: translate(-50%, 0)
+  text-align: center
+  padding: 52px 0 0
+
+  &:before
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    right: auto
+
+.author-text6
+  max-width: 350px
+  top: 170px
+  right: -90px
+  padding: 0 0 0 84px
+
+  &:before
+    left: 0
+    right: auto
+
+.author-text7
+  max-width: 430px
+  top: 330px
+  right: -205px
+  padding: 0 0 0 84px
+
+  &:before
+    left: 0
+    right: auto
+
+.author-text8
+  max-width: 430px
+  top: 490px
+  right: 50px
+  padding: 0 0 0 84px
+
+  &:before
+    left: 0
+    right: auto
+
+.author-text9
+  max-width: 480px
+  bottom: 210px
+  right: -110px
+  padding: 0 0 0 84px
+
+  &:before
+    left: 0
+    right: auto
+
+//programs
+.programs
+  h2
+    margin: 0 0 140px
+
+.block_hover
+  display: none
+  margin: 107px 0 0
+
+.list-dots
+  list-style: disc
+  padding: 0 0 0 20px
+
+.programs-box-wrapper
+  position: relative
+  width: 100%
+  border-radius: 35px
+  overflow: hidden
+  padding: 83px 97px 102px
+
+  &:after
+    content: ''
+    position: absolute
+    width: 1676px
+    min-height: 2513px
+    height: 100%
+    background: url("../img/programm-bg.jpg") no-repeat center
+      size: cover
+    opacity: .15
+    left: 0
+    top: 0
+
+  > *
+    position: relative
+    z-index: 1
+
+.panel_heading-one
+  background: #212936
+  color: #b2cae3
+
+  h4
+    color: #fff
+
+    span
+      background: #a4bad1
+
+  h3
+    color: #fff
+
+    span
+      color: #6e7e97
+
+  &:before
+    content: ''
+    position: absolute
+    width: 577px
+    height: 493px
+    right: -283px
+    bottom: 540px
+    background: url("../img/decor1.png") no-repeat center
+      size: 100%
+    display: none
+    z-index: 2
+
+.panel_heading-two
+  background: #2c2136
+  color: #af9bc7
+
+  h4
+    color: #fff
+
+    span
+      background: rgba(#fff, .4)
+
+  h3
+    color: #fff
+
+    span
+      color: #9e87ba
+
+  &:before
+    content: ''
+    position: absolute
+    width: 709px
+    height: 742px
+    left: -303px
+    bottom: -210px
+    background: url("../img/decor2.png") no-repeat center
+      size: 100%
+    display: none
+    z-index: 2
+
+  &:after
+    content: ''
+    position: absolute
+    width: 494px
+    height: 491px
+    background: url("../img/decor3.png") no-repeat center
+      size: 100%
+    display: none
+    z-index: 2
+    bottom: 36px
+    left: 222px
+
+  .programs-col
+    &:first-child
+      padding: 0 0 330px
+
+  .btn-border
+    border: solid 2px #946fa9
+
+    &:hover
+      background: #946fa9
+
+
+.panel_heading-three
+  background: #213336
+  color: #79a9a6
+
+  h4
+    color: #fff
+
+    span
+      background: rgba(#4e807d, .4)
+
+  h3
+    color: #fff
+
+    span
+      color: #3d7774
+
+  &:before
+    content: ''
+    position: absolute
+    width: 634px
+    height: 622px
+    right: -313px
+    bottom: 510px
+    background: url("../img/decor4.png") no-repeat center
+      size: 100%
+    display: none
+    z-index: 2
+
+  &:after
+    content: ''
+    position: absolute
+    width: 847px
+    height: 950px
+    background: url("../img/decor5.png") no-repeat center
+      size: 100%
+    display: none
+    z-index: 2
+    bottom: -346px
+    left: -50px
+
+  .programs-col
+    &:first-child
+      padding: 0 0 457px
+
+  .btn-border
+    border: solid 2px #3d7774
+
+    &:hover
+      background: #3d7774
+
+.panel_heading
+  position: relative
+  border-radius: 35px
+  width: 100%
+  margin: 0 0 133px
+
+  &:last-child
+    margin: 0
+
+
+.block_title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+  h3
+    font-size: 48px
+    font-family: $title-font
+
+    span
+      display: block
+      font-size: 30px
+      color: #6e7e97
+
+.block_title-wrapper
+  position: relative
+  z-index: 1
+
+.block_title-overlay
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  color: rgba(255, 255, 255, 0.25)
+  font-size: 124.5px
+  line-height: 1.33
+  mix-blend-mode: soft-light
+  font-family: 'RosaMarena', sans-serif
+  white-space: nowrap
+
+.programs-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.programs-col
+  width: 48%
+
+.programs-box
+  width: 100%
+  margin: 0 0 50px
+  font-size: 26px
+  letter-spacing: -0.26px
+
+  &:last-child
+    margin: 0
+
+  h4
+    position: relative
+    font-size: 36px
+    font-family: $title-font
+    letter-spacing: -0.36px
+    margin: 0 0 20px
+    display: flex
+    align-items: flex-start
+    white-space: nowrap
+
+    span
+      height: 2px
+      opacity: .5
+      margin: 10px 0 0 auto
+      width: calc(100% - 200px)
+      display: block
+
+
+.in
+  &:before, &:after
+    display: block
+
+//sleepy-kingdom
+.sleepy-kingdom
+  padding: 283px 0 0
+
+  .box-text
+    width: 100%
+    max-width: 1220px
+    text-align: center
+    margin: 20px auto 0
+    line-height: 1.45
+    font-size: 33px
+
+
+//information
+.information
+  padding: 120px 0
+
+  .section-wrapper
+    justify-content: space-between
+    margin: 60px 0 0
+
+.information-box
+  max-width: 20%
+  text-align: center
+  font-size: 30px
+  line-height: 1.2
+  padding: 0 10px
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 30px
+
+//prices
+.prices
+  padding: 0 0 451px
+  position: relative
+
+  h2
+    text-shadow: 0 0 120px rgba(156, 126, 197, 1)
+
+    span
+      display: block
+
+.price-value
+  font-size: 72px
+
+
+//recording
+.recording
+  h3
+    margin: 0 auto 53px
+    font-size: 33.5px
+    max-width: 503px
+    width: 100%
+    text-align: center
+
+.list-recording
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 auto
+  justify-content: center
+  max-width: 900px
+  width: 100%
+
+  li
+    margin: 0 14px 14px 0
+
+    &:nth-child(even)
+      margin-right: 0
+
+    a
+      background: $accent
+      border-radius: 5px
+      min-width: 321px
+      width: 100%
+      height: 73px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+
+
+//stages-learn
+.stages-learn
+  padding: 135px 0
+
+  h2
+    margin: 0 auto 98px
+
+  .section-wrapper
+    justify-content: space-between
+
+
+.stages-learn-box
+  text-align: center
+  font-size: 28px
+  font-weight: 300
+  color: #dde1fa
+  max-width: 222px
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 45px
+
+
+//reviews
+.reviews
+  padding: 0 0 100px
+
+.reviews-slider
+  margin: 90px 0 0
+  padding: 0 30px
+
+.reviews-box
+  padding: 30px
+  font-size: 20px
+  line-height: 1.5
+
+  p
+    margin: 0 0 30px
+
+    &:last-child
+      margin: 0
+
+.slick-dots
+  position: relative
+  margin: 40px auto 0
+  bottom: 0
+  left: 0
+  top: 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+  li
+    cursor: pointer
+    width: 12px
+    height: 12px
+    background: #fff
+    border: none
+      radius: 50%
+    margin: 0 20px 0 0
+
+    &:last-child
+      margin: 0
+
+    button
+      display: none
+
+  .slick-active
+    background: $accent
+
+.slick-arrow
+  padding: 0
+  border: none
+    radius: 0
+  z-index: 1
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  opacity: 1
+  background: url("../img/arrow-left.png") no-repeat center
+    size: 100%
+  width: 27px
+  height: 80px
+  cursor: pointer
+
+  &:before
+    display: none
+
+.slick-next
+  right: 0
+  transform: translate(0, -50%) scale(-1, 1)
+
+.slick-prev
+  left: 0
+
+
+@import "media"
+// Всегда в конце
